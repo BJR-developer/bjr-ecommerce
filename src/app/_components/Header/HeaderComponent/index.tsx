@@ -42,7 +42,7 @@ const Navbar = ({ header }: { header: Header }) => {
       />
       <div className="flex">
         <div className="flex flex-shrink-0 items-center">
-          <Link legacyBehavior href={'/'} legacyBehavior>
+          <Link legacyBehavior href={'/'}>
             <a>
               <MainLogo width={40} height={40} />
             </a>
@@ -95,7 +95,6 @@ const Navbar = ({ header }: { header: Header }) => {
             </Link>
           </div>
         )}
-
 
         {user && (
           <>
@@ -157,9 +156,7 @@ const Navbar = ({ header }: { header: Header }) => {
                   ))}
                   <Menu.Item>
                     <Link legacyBehavior href="/logout">
-                      <a className="block px-4 py-2 text-sm text-gray-700">
-                        Logout
-                      </a>
+                      <a className="block px-4 py-2 text-sm text-gray-700">Logout</a>
                     </Link>
                   </Menu.Item>
                 </Menu.Items>

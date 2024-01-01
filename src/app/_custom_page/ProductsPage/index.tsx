@@ -7,9 +7,9 @@ import { CallToActionBlock } from '../../_blocks/CallToAction'
 import { ContentBlock } from '../../_blocks/Content'
 import { MediaBlock } from '../../_blocks/MediaBlock'
 import { RelatedProducts, RelatedProductsProps } from '../../_blocks/RelatedProducts'
+import { Pagination } from '../../_components/Pagination'
 import RichText from '../../_components/RichText'
 import ProductList from './ProductList'
-import { Pagination } from '../../_components/Pagination'
 
 const blockComponents = {
   cta: CallToActionBlock,
