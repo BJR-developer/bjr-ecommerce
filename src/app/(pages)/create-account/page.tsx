@@ -22,13 +22,7 @@ export default async function CreateAccount() {
     <section className={classes.createAccount}>
       <div className={classes.heroImg}>
         <Link href="/">
-          <Image
-            src="/logo-black.svg"
-            alt="logo"
-            width={250}
-            height={23}
-            className={classes.logo}
-          />
+          <Image src="/logo-black.png" alt="logo" width={23} height={23} className={classes.logo} />
         </Link>
       </div>
 

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Metadata } from 'next'
-import { Jost } from 'next/font/google'
+import { Inter } from 'next/font/google'
 
 import { AdminBar } from './_components/AdminBar'
 import { Footer } from './_components/Footer'
@@ -10,11 +10,12 @@ import { InitTheme } from './_providers/Theme/InitTheme'
 import { mergeOpenGraph } from './_utilities/mergeOpenGraph'
 
 import './_css/app.scss'
+import '../../src/css/compiledTailwind.css'
 
-const jost = Jost({
+const inter = Inter({
   subsets: ['latin'],
-  weight: ['400', '700'],
-  variable: '--font-jost',
+  display: 'swap',
+  variable: '--font-inter',
 })
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
@@ -25,7 +26,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
         <link rel="icon" href="/favicon.ico" sizes="32x32" />
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
       </head>
-      <body className={jost.variable}>
+      <body className={inter.variable}>
         <Providers>
           <AdminBar />
           {/* @ts-expect-error */}
